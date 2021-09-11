@@ -13,6 +13,7 @@ const DonutChart = () => {   //function NavBar() {
 
     const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] }) //este rederiza os gráficos
 
+    //AQUI QUE VAI SER TRAZIDO OS DADOS DO BACKEND E O GRÁFICO SERÁ RENDERIZADO!!!!!!!!!!
     useEffect(() => {
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
             .then(response => {
